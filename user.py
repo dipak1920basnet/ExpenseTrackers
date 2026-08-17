@@ -1,7 +1,8 @@
 from expense import Expenses
 
 class User:
-    def __init__(self,name:str=None, password:str=None, email:str=None):
+    def __init__(self,id, name:str=None, password:str=None, email:str=None):
+        self.id = id
         self.name = name
         self.email = email
         self.password = password
@@ -33,4 +34,12 @@ class User:
             self.Expense = []
         self.Expense.append(expense)
 
+    def delete_expense(self):
+        pass
+
+    def total_expenses(self):
+        pass
+
+    def generate_expense_id(self):
+        pass
     
